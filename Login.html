@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style> 
+
+    button { 
+           background-color: #4CAF50; 
+           width: 100%;
+            color: rgb(248, 241, 228); 
+            padding: 15px; 
+            margin: 10px 0px; 
+            border: none; 
+            cursor: pointer; 
+             } 
+     form { 
+            border: 3px solid #f1f1f1; 
+        } 
+     input[type=text], input[type=password] { 
+            width: 100%; 
+            margin: 8px 0;
+            padding: 12px 20px; 
+            display: inline-block; 
+            border-color: hsl(0, 92%, 50%);
+            box-sizing: border-box; 
+        }
+     button:hover { 
+            opacity: 0.7; 
+        } 
+      .cancelbtn { 
+            width: auto; 
+            padding: 10px 18px;
+            margin: 10px 5px;
+        } 
+          
+       
+     .container { 
+            padding: 25px; 
+            
+        } 
+        .output {
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+.note {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.editorial {
+    background: rgba(235, 0, 0, 0.918);
+    padding: 10px;
+}
+
+.editorial:before {
+    content: 'Editor: ';
+}
+input[type=submit] {
+            background-color: green;
+            border: none;
+            text-decoration: none;
+            color: white;
+            padding: 20px 20px;
+            margin: 20px 20px;
+            cursor: pointer;
+         }
+
+         input:not(:placeholder-shown) {
+  border-color: hsl(0, 76%, 50%);;
+}
+
+/* Show green borders when valid */
+
+    </style>
+</head>
+<body>
+    <i class="fa fa-lock" style="font-size:36px"> &nbsp;Login</i>
+    <form action="" method="get" class="form-example">
+        
+        <div class="form-example">
+          <label for="email">Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+          <input type="email" name="email" id="email" required></br></br>
+          <label for="password">password: &nbsp; </label>
+          <input type="" name="" id="pwd" name="pwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+          title="Must contain at least one number and one uppercase and lowercase letter, 
+          and at least 8 or more characters">
+        </div>
+        
+        <div class="form-example">
+            <input type="submit" value="Login">
+        </div>
+      </form>
+</body>
+</html> 
